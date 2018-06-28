@@ -2,9 +2,9 @@ import praw
 import smtplib
 import time
 
-FROM = "FROM"
-TO = "TO"
-PASS = "PASSWORD"
+FROM = "fnbr.reddit.bot1@gmail.com"
+TO = "owenc343@gmail.com"
+PASS = "fortniteredditbot"
 
 # Creating Reddit instance
 reddit = praw.Reddit('FNBR bot1')
@@ -52,8 +52,11 @@ while True:
     str(msg)
     print(msg)
 
+    email_interval = 14440
+    amt_hrs = int(email_interval / 3600)
+
     if msg == "":
-        msg = "No news to report, I'll get back to you in an hour. \n - Reddit Bot"
+        msg = "No news to report, I'll get back to you in " + str(amt_hrs) + (" hours." if (amt_hrs > 1) else " hour.") + "\n - Reddit Bot"
 
     try:
         print("1")
@@ -83,4 +86,4 @@ while True:
         hour = str(int_hour)
     print(month + "/" + day + "/" + year + " " + hour + ":" + minute)
 
-    time.sleep(3600)
+    time.sleep(email_interval)
