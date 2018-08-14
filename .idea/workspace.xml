@@ -3,10 +3,11 @@
   <component name="BookmarkManager">
     <bookmark url="file://$PROJECT_DIR$/FNBR_Bot.py" line="36" />
     <bookmark url="file://$PROJECT_DIR$/FNBR_Bot.py" line="38" />
-    <bookmark url="file://$PROJECT_DIR$/Test_FNBR_email_bot.py" line="88" />
+    <bookmark url="file://$PROJECT_DIR$/Test_FNBR_email_bot.py" line="90" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="419cedaa-834f-413a-83e8-856c6509a8f0" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/venv/PCSalesBot.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Test_FNBR_email_bot.py" beforeDir="false" afterPath="$PROJECT_DIR$/Test_FNBR_email_bot.py" afterDir="false" />
     </list>
@@ -19,11 +20,26 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Test_FNBR_email_bot.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Test_FNBR_email_bot.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Test_FNBR_email_bot.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-839">
-              <caret line="2" selection-start-line="2" selection-end-line="2" selection-end-column="11" />
+            <state relative-caret-position="859">
+              <caret line="91" lean-forward="true" selection-end-line="91" />
+              <folding>
+                <element signature="e#0#11#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PCSalesBot.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/venv/PCSalesBot.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-136">
+              <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
+              <folding>
+                <element signature="e#0#11#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -48,14 +64,15 @@
         <option value="$PROJECT_DIR$/previous_read_posts" />
         <option value="$PROJECT_DIR$/FNBR_Bot.py" />
         <option value="$PROJECT_DIR$/Test_FNBR_email_bot.py" />
+        <option value="$PROJECT_DIR$/venv/PCSalesBot.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="-1928" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-66" />
+    <option name="y" value="-23" />
+    <option name="width" value="1934" />
+    <option name="height" value="1047" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -63,6 +80,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -70,11 +88,15 @@
               <item name="FNBR_Reddit_Bot" type="b2602c69:ProjectViewProjectNode" />
               <item name="FNBR_Reddit_Bot" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="FNBR_Reddit_Bot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FNBR_Reddit_Bot" type="462c0819:PsiDirectoryNode" />
+              <item name="venv" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -99,7 +121,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Test_FNBR_email_bot">
+  <component name="RunManager" selected="Python.PCSalesBot">
     <configuration name="FNBR_Bot" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="FNBR_Reddit_Bot" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -113,6 +135,24 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/FNBR_Bot.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="PCSalesBot" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="FNBR_Reddit_Bot" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/venv" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/venv/PCSalesBot.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -158,9 +198,11 @@
       <item itemvalue="Python.FNBR_Bot" />
       <item itemvalue="Python.email_test" />
       <item itemvalue="Python.Test_FNBR_email_bot" />
+      <item itemvalue="Python.PCSalesBot" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.PCSalesBot" />
         <item itemvalue="Python.Test_FNBR_email_bot" />
         <item itemvalue="Python.email_test" />
         <item itemvalue="Python.FNBR_Bot" />
@@ -181,15 +223,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1928" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.1546875" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.1546875" />
       <window_info anchor="bottom" id="TODO" order="10" />
       <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="3" />
       <window_info anchor="bottom" id="Python Console" order="0" />
-      <window_info anchor="bottom" id="Run" order="6" visible="true" weight="0.1604676" />
+      <window_info active="true" anchor="bottom" id="Run" order="6" visible="true" weight="0.34537727" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="1" />
       <window_info id="Favorites" order="0" side_tool="true" />
@@ -221,8 +263,31 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Test_FNBR_email_bot.py">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="731">
+          <caret line="43" column="16" selection-start-line="43" selection-start-column="16" selection-end-line="43" selection-end-column="16" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Test_FNBR_email_bot.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Test_FNBR_email_bot.py">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" selection-start-line="2" selection-end-line="2" selection-end-column="11" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -431,8 +496,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Test_FNBR_email_bot.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-839">
-          <caret line="2" selection-start-line="2" selection-end-line="2" selection-end-column="11" />
+        <state relative-caret-position="859">
+          <caret line="91" lean-forward="true" selection-end-line="91" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/PCSalesBot.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-136">
+          <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

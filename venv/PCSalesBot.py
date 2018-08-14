@@ -3,9 +3,9 @@ import smtplib
 import time
 import re
 
-FROM = "fnbr.reddit.bot1@gmail.com"
+FROM = "ifindpcsalesbot@gmail.com"
 TO = "owenc343@gmail.com"
-PASS = "fortniteredditbot"
+PASS = "findpcsales"
 
 # Creating Reddit instance
 reddit = praw.Reddit('FNBR bot1')
@@ -17,35 +17,17 @@ reddit = praw.Reddit('FNBR bot1')
 multi_subs = reddit.subreddit('buildapcsales')
 
 
-'''
-# Create text file to store posts that have already been observed
-if not os.path.isfile("previous_read_posts"):
-    previous_read_posts = []
-
-# Add to list after it is created for the first time
-else:
-    with open("previous_read_posts", "r") as f:
-        previous_read_posts = f.read()
-        previous_read_posts = previous_read_posts.split("\n")
-        previous_read_posts = list(filter(None, previous_read_posts))
-        previous_read_posts = list(previous_read_posts)
-'''
-
 previous_read_posts = []
-# Searchs through top 50 posts in Fortnite subreddit every hour and adds their ids and titles to text document
-# Would prefer to have this scheduled by Task Scheduler. However, does not run properly when scheduled by the Task Scheduler. Although my simple email script runs fine with Task Scheduler. Is it an issue with PRAW?
+# Searchs through top posts related to specified keywords and finds deals in the buildapcsales subreddit
 while True:
     id_title = dict()
     for submission in multi_subs.hot(limit=20):
         if submission.title not in previous_read_posts:
-            # previous_read_posts.append(submission.title)
-            # id_title.update({submission.title: submission.url})
-            # if re.search(r'\bSkin\b | \bPatch\b | \bUpdate\b | \bGuitar\b | \bDowntime\b | \bSolo\b | \bState\b', submission.title, re.IGNORECASE):
-            if re.search(r'\bMONITOR\b | \bSSD\b | \bUpdate\b | \bGuitar\b | \bDowntime\b | \bSolo\b | \bState\b', submission.title, re.IGNORECASE):
+            if re.search(r'\bMONITOR\b | \bSSD\b', submission.title, re.IGNORECASE):
                 previous_read_posts.append(submission.title)
                 id_title.update({submission.title : submission.url})
 
-# Send Email with latest news from FNBR subreddit or multireddit
+# Send Email with latest deals from buildapcsales
     msg = ""
     msg_list = []
     for title in id_title:
@@ -54,11 +36,11 @@ while True:
     str(msg)
     print(msg)
 
-    email_interval = 14440
+    email_interval = 7220
     amt_hrs = int(email_interval / 3600)
 
     if msg == "":
-        msg = "No news to report, I'll get back to you in " + str(amt_hrs) + (" hours." if (amt_hrs > 1) else " hour.") + "\n - Reddit Bot"
+        msg = "No new deals found, I'll get back to you in " + str(amt_hrs) + (" hours." if (amt_hrs > 1) else " hour.") + "\n - Reddit Bot"
 
     try:
         print("1")
